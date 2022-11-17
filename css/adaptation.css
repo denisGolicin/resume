@@ -1,0 +1,29 @@
+@media (max-width: 575px) {
+	body{
+		padding-top: 75px;
+	}
+	.block-main{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.block-photo{
+		width: 100px;
+		height: 100px;
+		transform: translateY(-50px);
+	}
+	.block-title-text{
+		font-size: 15px;
+		transform: translateY(-25px);
+	}
+	.heshtag{
+		font-size: 15px;
+		padding: 3px;
+	}
+	.typing-demo{
+		font-size: .9em;
+	}
+	.wrapper{
+		margin-bottom: 10px;
+		transform: translateY(-50px);
+	}
+  }

@@ -1,0 +1,39 @@
+@media (max-width: 575px) {
+	body{
+		padding-top: 90px;
+	}
+	.block-main{
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 80%;
+	}
+	.block-photo{
+		width: 100px;
+		height: 100px;
+		transform: translateY(-50px);
+	}
+	.block-title-text{
+		font-size: 15px;
+		transform: translateY(-25px);
+	}
+	.heshtag{
+		font-size: 15px;
+		padding: 3px;
+	}
+	.block-nav{
+		position: absolute;
+    	left: 50%;
+    	margin-right: -50%;
+    	transform: translate(-50%, 0);
+	}
+	.block-nav-el{
+		display: inline-block;
+	}
+	.typing-demo{
+		font-size: .9em;
+	}
+	.wrapper{
+		margin-bottom: 10px;
+		transform: translateY(-50px);
+	}
+  }

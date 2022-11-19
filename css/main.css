@@ -109,7 +109,8 @@ footer{
     margin-top: 25px;
     text-align: center; 
     animation: anim-move .5s forwards;
-    opacity: .1;
+    opacity: 0;
+    animation-delay: .8s;
 }
 .heshtag-link{
     background-color: #3996d3;
@@ -148,7 +149,7 @@ footer{
 }
 @keyframes anim-move{
     100%{
-        transform: translateY(-50px);
+        transform: translateY(-100px);
         opacity: 1;
     }
 }
@@ -161,7 +162,8 @@ footer{
     margin: 0 auto;
     width: 100%;
     animation: anim-move .5s forwards;
-    opacity: .1;
+    animation-delay: .3s;
+    opacity: 0;
 }
 .block-skills-el{
     display: flex;
@@ -220,8 +222,9 @@ footer{
     width: 100%;
     padding: 10px;
     font-size: 15px;
-    opacity: .1;
+    opacity: 0;
     animation: anim-move .5s forwards;
+    animation-delay: 1s;
 }
 .block-project-el{
     display:inline-block;

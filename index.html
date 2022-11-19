@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/adaptation.css">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>LiTec</title>
+	<title>DGDeveloper</title>
 </head>
 <body>
 
@@ -19,26 +19,20 @@
 		</div>
 	</div>
 
-	<div class="block-nav">
-		<a href="#about"><div class="block-nav-el heshtag heshtag-about"><span class="color-heshtag">@</span>обомне</div></a>
-		<a href="#project"><div class="block-nav-el heshtag heshtag-project" ><span class="color-heshtag">@</span>проекты</div></a>
-		<a href="#footer"><div class="block-nav-el heshtag heshtag-link"><span class="color-heshtag">@</span>связь</div></a>
-	</div>
-
 	<div class="block-main">
 		<div class="block-photo">
 
 		</div>
-		<div class="block-title-text" id="about">
+		<div class="block-title-text">
 			<p><span class = "heshtag heshtag-about"><span class="color-heshtag">@</span>обомне</span>Меня зовут Денис, я начинающий разработчик.</p> 
 			<p>На данный момент владею следующими навыками:</p>
 		</div>
 		<div class="block-skills">
 			<div class="block-skills-el">
-				<div class="block-skills-el-icon-flex">
-					<div class="block-skills-el-icon html"></div>
-					<div class="block-skills-el-icon css"></div>
-					<div class="block-skills-el-icon js"></div>
+				<div class="block-skills-el-icon-pos">
+					<a href="https://ru.wikipedia.org/wiki/HTML" target="_blank"><div class="block-skills-el-icon html"></div></a>
+					<a href="https://ru.wikipedia.org/wiki/CSS" target="_blank"><div class="block-skills-el-icon css"></div></a>
+					<a href="https://ru.wikipedia.org/wiki/JavaScript" target="_blank"><div class="block-skills-el-icon js"></div></a>
 				</div>
 				<div class="block-skills-el-text">
 					<p>HTML, CSS, JavaScript</p>
@@ -48,8 +42,8 @@
 			<div class="block-br"></div>
 
 			<div class="block-skills-el">
-				<div class="block-skills-el-icon plus" >
-
+				<div class="block-skills-el-icon-pos">
+					<a href="https://ru.wikipedia.org/wiki/C%2B%2B" target="_blank"><div class="block-skills-el-icon plus" ></div></a>
 				</div>
 				<div class="block-skills-el-text">
 					<p>C++: REST API, Socket - Cliect&Server</p>
@@ -59,16 +53,16 @@
 			<div class="block-br"></div>
 
 			<div class="block-skills-el">
-				<div class="block-skills-el-icon python" >
-
+				<div class="block-skills-el-icon-pos">
+					<a href="https://ru.wikipedia.org/wiki/Python" target="_blank"><div class="block-skills-el-icon python" ></div></a>
 				</div>
 				<div class="block-skills-el-text">
 					<p>Python: Flask, Aiogram, Telebot</p>
 				</div>
 			</div>
 		</div>
-		<p style = "text-align: center;"><span class = "heshtag heshtag-project"><span class="color-heshtag">@</span>проекты</span></p>
-		<div class="block-project" id="project">
+		<p class="p-project"><span class = "heshtag heshtag-project"><span class="color-heshtag">@</span>проекты</span></p>
+		<div class="block-project">
 			<div class="block-project-el" title="Мониторинг и управление квартирой или домом">
 				<figure>
 					<img class="block-project-icon" src="src/smarthouse.jpg" alt="icon cmasrt house">

@@ -149,7 +149,7 @@ footer{
 }
 @keyframes anim-move{
     100%{
-        transform: translateY(-100px);
+        transform: translateY(-50px);
         opacity: 1;
     }
 }

@@ -21,10 +21,10 @@
 	</div>
 
 	<div class="block-main">
-		<div class="block-photo">
-
-		</div>
-		<div class="block-title-text">
+		
+		<img  class="block-photo" src="src/photo.jpg" alt="photo">
+		
+		<div class="block-text">
 			<p><span class = "heshtag heshtag-about"><span class="color-heshtag">@</span>обомне</span>Меня зовут Денис, я начинающий разработчик.</p> 
 			<p>На данный момент владею следующими навыками:</p>
 		</div>
@@ -64,37 +64,83 @@
 		</div>
 		<p class="p-project"><span class = "heshtag heshtag-project"><span class="color-heshtag">@</span>проекты</span></p>
 		<div class="block-project">
-			<div class="block-project-el" title="Мониторинг и управление квартирой или домом">
-				<figure>
-					<img class="block-project-icon" src="src/smarthouse.jpg" alt="icon cmasrt house">
-					<figcaption>Система умного дома</figcaption>
-				</figure>
+			<div class="block-accordion">
+				<div class="accordion-main">
+					<div class="accordion-icon">
+						<img src="src/smarthouse.jpg" alt="">
+					</div>
+					<div class="accordion-label">
+						Система умного дома
+					</div>
+				</div>
+
+				<div class="accordion-content">
+					<p class="content-title">Основные особенности и функции:</p>
+					<ul>
+						<img class="content-img" src="src/css.png" alt="">
+						<img class="content-img" src="src/css.png" alt="">
+						<li><span class="content-circle">●</span> Веб-интерфейс и удаленный доступ через Telegram</li>
+						<img class="content-img" src="src/dat.jpg" alt="">
+						<li><span class="content-circle">●</span> Беспроводная связь модулей</li>
+						<img class="content-img" src="src/css.png" alt="">
+						<li><span class="content-circle">●</span> Опциональные настройки каждого модуля</li>
+						<img class="content-img" src="src/css.png" alt="">
+						<li><span class="content-circle">●</span> Монтаж в электрическую сеть без вмешательство в электропроводку</li>
+						<img class="content-img" src="src/smallPrice.png" alt="">
+						<img class="content-img" src="src/ali.jpg" alt="">
+						<li><span class="content-circle">●</span> Низкая стоимость материала, все компоненты с AliExpress</li>
+					</ul>
+					<p>Код и более подробная информация о проекте в репозитории <a href="https://github.com/denisGolicin" target="_blank"><span class="button-icon-github tedt">GitHub</span></a></p>
+				</div>
 			</div>
-			<div class="block-project-el" title="Сайт услуг по электромонтажу">
-				<figure>
-					<img class="block-project-icon" src="src/website.png" alt="icon website">
-					<figcaption>Услуги эл.монтажа</figcaption>
-				</figure>
+
+			<div class="block-accordion">
+				<div class="accordion-main">
+					<div class="accordion-icon">
+						<img src="src/website.png" alt="">
+					</div>
+					<div class="accordion-label">
+						Сайт услуг по электромонтажу
+					</div>
+				</div>
+				
+				<div class="accordion-content">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, soluta.</p>
+				</div>
 			</div>
-			<div class="block-project-el" title = "Сайт с услугами в IT сфере">
-				<figure>
-					<img class="block-project-icon" src="src/website.png" alt="icon website">
-					<figcaption>Услуги в IT</figcaption>
-				</figure>
+
+			<div class="block-accordion">
+				<div class="accordion-main">
+					<div class="accordion-icon">
+						<img src="src/bot.jpg" alt="">
+					</div>
+					<div class="accordion-label">
+						Телеграм бот
+					</div>
+				</div>
+				
+				<div class="accordion-content">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, soluta.</p>
+				</div>
 			</div>
-			<div class="block-project-el" title = "Ардуино проект телеграфного ключа">
-				<figure>
-					<img class="block-project-icon" src="src/arduino.jpg" alt="icon arduino">
-					<figcaption>Телеграфный ключ</figcaption>
-				</figure>
+
+			<div class="block-accordion">
+				<div class="accordion-main">
+					<div class="accordion-icon">
+						<img src="src/arduino.jpg" alt="">
+					</div>
+					<div class="accordion-label">
+						Телеграфный ключ
+					</div>
+				</div>
+				
+				<div class="accordion-content">
+					<p class="tedt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, soluta.</p>
+				</div>
 			</div>
-			<div class="block-project-el" title = "Телеграм бот">
-				<figure>
-					<img class="block-project-icon" src="src/bot.jpg" alt="Elephant at sunset">
-					<figcaption>Телеграм бот</figcaption>
-				</figure>
-			</div>
+			
 		</div>
+			
 	</div>
 
 	<footer id="footer">
@@ -103,5 +149,33 @@
 		<a href="https://t.me/FollowReason"  target="_blank"><div class = "footer-icon telegram"></div></a>
 	</footer>
 
+
+	<script>
+		const boxes = Array.from(document.querySelectorAll(".block-accordion")); // считываем все элементы аккордеона в массив
+
+		boxes.forEach((box) => {
+			box.addEventListener("click", boxHandler); // при нажатии на бокс вызываем ф-ию boxHanlder
+			console.log(box);
+		});
+
+		function boxHandler(e) {
+			// e.preventDefault(); // сбрасываем стандартное поведение
+			let currentBox = e.target.closest(".block-accordion"); // определяем текущий бокс
+			let currentContent = currentBox.lastElementChild; // находим скрытый контент
+			if(e.target == e.target.closest(".tedt")){
+				console.log("No");
+				return;
+			}
+			console.log(e.target);
+			currentBox.classList.toggle("active"); // присваиваем ему активный класс
+			if (currentBox.classList.contains("active")) {
+				// если класс активный ..
+				currentContent.style.maxHeight = currentContent.scrollHeight + "px"; // открываем контент
+			} else {
+				// в противном случае
+				currentContent.style.maxHeight = 0; // скрываем контент
+			}
+		}
+	</script>
 	</body>
 </html>

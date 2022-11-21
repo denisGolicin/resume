@@ -4,6 +4,28 @@
 		height: 70px;
 	}
 }
+@media (max-width: 400px){
+	.accordion-content{
+		font-size: 15px;
+	}
+	.content-img{
+		width: 75px;
+		height: 75px;
+	}
+	.content-title{
+		font-size: 20px;
+	}
+	.accordion-label{
+		font-size: 15px;
+	}
+}
+@media (max-width: 300px) {
+	.block-skills-el-icon{
+		width: 30px;
+		height: 30px;
+		margin: 0 auto;
+	}
+}
 @media (max-width: 575px) {
 	.block-skills-el-icon{
 		width: 50px;
@@ -29,6 +51,9 @@
 	.heshtag{
 		font-size: 15px;
 		padding: 3px;
+		padding-left: 7px;
+		padding-right: 7px;
+		
 	}
 	.block-skills{
 		transform: translateY(-10px);

@@ -8,14 +8,14 @@ body{
 }
   
 main {
-      position: static;
+      position: fixed;
       height: 100%;
       width: 100%;
   }
   
 .main-wrapper{
     text-align: center;
-    max-height: 70%;
+    max-height: 80%;
     position: absolute;
     overflow: auto;
     top: 50%;
@@ -26,7 +26,7 @@ main {
 .main-wrapper::-webkit-scrollbar { width: 0; }
 
 .text-liner{
-    width: 60%;
+    width: 80%;
     height: 1px;
     background-color: #ffffff25;
     margin-top: 20px;
@@ -40,7 +40,7 @@ main {
         transform: translateX(0px) scaleX(0); 
     }
     100%{
-        transform: translateX(200px) scaleX(1);
+        transform: translateX(150px) scaleX(1);
     }
 }
 .text-liner::after{
@@ -53,7 +53,7 @@ main {
     width: 150px;
     opacity: 0;
     animation: animation-next-liner-text .5s forwards;
-    animation-delay: 5.5s;
+    animation-delay: 4s;
     font-size: 15px;
 }
 
@@ -80,15 +80,15 @@ footer{
 }
 .icon:first-child, .icon:nth-child(2), .icon:last-child{
    animation: animation-icon .5s forwards;
-   animation-delay: 6.5s;
+   animation-delay: 4.5s;
 }
 .icon:nth-child(2){
     margin-left: 15px;
     margin-right: 15px;
-    animation-delay: 6.7s;
+    animation-delay: 4.7s;
 }
 .icon:last-child{
-    animation-delay: 6.9s;
+    animation-delay: 4.9s;
     
 }
 
@@ -101,7 +101,7 @@ footer{
     max-height: 0;
     overflow: hidden;
     animation: animation-main-content 1s forwards;
-    animation-delay: 7.4s;
+    animation-delay: 5.4s;
     background-color: #ffffff25;
     border-radius: 10px;
 }

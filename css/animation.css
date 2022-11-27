@@ -234,7 +234,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%); */
-  padding: 12px 48px;
   color: #bd4be5;
   background: linear-gradient(to right, #ffffff25 0, white 10%, #ffffff25 20%);
   background-position: 0;
@@ -250,10 +249,10 @@
   }
     
 @keyframes bg-pos{
-  0%{
+  from{
     background-position: -30px;}
   /* 60%{
     background-position: 500px;} */
-  100%{ 
-    background-position: 500px;}
+  to{ 
+    background-position: 400px;}
 }

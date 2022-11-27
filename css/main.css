@@ -8,14 +8,14 @@ body{
 }
   
 main {
-      position: fixed;
+      position: static;
       height: 100%;
       width: 100%;
   }
   
 .main-wrapper{
     text-align: center;
-    max-height: 80%;
+    max-height: 70%;
     position: absolute;
     overflow: auto;
     top: 50%;

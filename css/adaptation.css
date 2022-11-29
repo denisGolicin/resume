@@ -12,14 +12,9 @@
 	  }
 	  /*============*/
 	  .text-liner::after{
-		content: 'By Denis Golicin';
-		color: var(--main-color);
-		position: absolute;
 		top: 50%;
 		left: -82%;
 		transform: translate(82%,-50%) translateY(-2px);
-		width: 150px;
-		font-size: 15px;
 	}
 	@keyframes animation-text-liner{
 
@@ -44,14 +39,19 @@
 		  background-position: 250px;}
 	  }
 	  .text-liner::after{
-		content: 'By Denis Golicin';
-		color: var(--main-color);
-		position: absolute;
 		top: 50%;
 		left: -127%;
 		transform: translate(127%,-50%) translateY(-2px);
-		width: 150px;
 		font-size: 13px;
+		animation: animation-text-liner-after 1s forwards;
+		animation-delay: 8s;
+	}
+	@keyframes animation-text-liner-after {
+		to{
+			top: 50%;
+			left: -100%;
+			transform: translate(100%,-50%) translateY(-2px);
+		}
 	}
 	@keyframes animation-text-liner{
 
@@ -59,9 +59,31 @@
 			transform: translateX(0px)
 		}
 		100%{
-			transform: translateX(140px);
+			transform: translateX(120px);
 		}
 	}
+	@keyframes animation-cursor {
+		60%{
+			top:47%;
+			left: 55%;
+			width: 25px;
+			height: 25px;
+		}
+		80%{
+			width: 20px;
+			height: 20px;
+		}
+		90%{
+			width: 25px;
+			height: 25px;
+			opacity: 1;
+		}
+		100%{
+			top:47%;
+			left: 55%;
+			opacity: 0;
+		}
+	 }
 
 }
 @media (max-width: 332px) {
@@ -77,14 +99,9 @@
 		  background-position: 200px;}
 	  }
 	  .text-liner::after{
-		content: 'By Denis Golicin';
-		color: var(--main-color);
-		position: absolute;
 		top: 50%;
 		left: -140%;
 		transform: translate(140%,-50%) translateY(-2px);
-		width: 150px;
-		font-size: 13px;
 		animation: animation-text-liner-after 1s forwards;
 		animation-delay: 8s;
 	}

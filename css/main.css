@@ -1,3 +1,7 @@
+:root{
+    --main-color: #ffffff25;
+    --text-color: rgba(255, 255, 255, 0.616)
+}
 body{
     
     font-family: 'Poppins', sans-serif;
@@ -17,7 +21,8 @@ main {
     text-align: center;
     max-height: 80%;
     position: absolute;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -26,42 +31,32 @@ main {
 .main-wrapper::-webkit-scrollbar { width: 0; }
 
 .text-liner{
-    width: 80%;
+    width: 100%;
     height: 1px;
-    background-color: #ffffff25;
+    background-color: var(--main-color);
     margin-top: 20px;
-    animation: animation-text-liner 1.5s forwards;
-    animation-delay: 2.5s;
-    transform: scaleX(0);
+    animation: animation-text-liner 3.5s forwards;
+    animation-delay: 3.5s;
+    transform: translateX(-500px);
 }
 @keyframes animation-text-liner{
 
     60%{ 
-        transform: translateX(0px) scaleX(0); 
+        transform: translateX(0px)
     }
     100%{
-        transform: translateX(150px) scaleX(1);
+        transform: translateX(150px);
     }
 }
 .text-liner::after{
     content: 'By Denis Golicin';
-    color: #ffffff25;
+    color: var(--main-color);
     position: absolute;
     top: 50%;
-    left: -20%;
-    transform: translate(-20%,-50%) translateY(-2px);
+    left: -50%;
+    transform: translate(50%,-50%) translateY(-2px);
     width: 150px;
-    opacity: 0;
-    animation: animation-next-liner-text .5s forwards;
-    animation-delay: 4s;
     font-size: 15px;
-}
-
-@keyframes animation-next-liner-text{
-    to{
-        transform: translate(-50%,-50%) translateY(-2px);
-        opacity: 1;
-    }
 }
 
 footer{
@@ -74,21 +69,31 @@ footer{
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background-color: #ffffff25;
+    background-color: rgba(255, 255, 255, 0);
     transform: translateY(300px);
     
 }
+.icon>svg:hover{
+    fill:rgba(255, 255, 255, 0.616);
+}
+.icon>svg{
+    width: 35px;
+    height: 35px;
+    transition: .3s;
+    cursor: pointer;
+    fill: var(--main-color);
+}
 .icon:first-child, .icon:nth-child(2), .icon:last-child{
-   animation: animation-icon .5s forwards;
-   animation-delay: 4.5s;
+   animation: animation-icon 1s forwards;
+   animation-delay: 6.5s;
 }
 .icon:nth-child(2){
     margin-left: 15px;
     margin-right: 15px;
-    animation-delay: 4.7s;
+    animation-delay: 6.7s;
 }
 .icon:last-child{
-    animation-delay: 4.9s;
+    animation-delay: 6.9s;
     
 }
 
@@ -101,8 +106,8 @@ footer{
     max-height: 0;
     overflow: hidden;
     animation: animation-main-content 1s forwards;
-    animation-delay: 5.4s;
-    background-color: #ffffff25;
+    animation-delay: 8s;
+    background-color: var(--main-color);;
     border-radius: 10px;
 }
 @keyframes animation-main-content {
@@ -115,19 +120,38 @@ footer{
     }
  }
 p{
-    color: rgba(255, 255, 255, 0.616);
+    color: var(--text-color);
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     text-align: center;
-    margin-top: 10px;
+    margin: 20px;
 }
- .photo{
+p b{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+p b span{
+    color: brown;
+}
+.moment-skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+.moment-skills div, svg{
+    
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+ .photo, .photo>svg{
     margin: 0 auto;
-    width: 70px;
-    height: 70px;
-    background-color: #ffffff25;
+    width: 100px;
+    height: 100px;
+    background-color: var(--main-color);
     border-radius: 50%;
  }
+ 
 
  .cursor{
     position: absolute;
@@ -137,7 +161,8 @@ p{
     top:100%;
     left: 100%;
     background-color: #ffffff00;
-    animation: animation-cursor 4s forwards;
+    animation: animation-cursor 1.5s forwards;
+    animation-delay: 2s;
     z-index: 1;
  }
 

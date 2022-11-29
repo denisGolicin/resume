@@ -235,7 +235,7 @@
   left: 50%;
   transform: translate(-50%,-50%); */
   color: #bd4be5;
-  background: linear-gradient(to right, #ffffff25 0, white 10%, #ffffff25 20%);
+  background: linear-gradient(to right, var(--main-color) 0, white 10%, var(--main-color) 20%);
   background-position: 0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -30,6 +30,12 @@
 	.dgdeveloper{
 		font-size: 40px;
 	}
+	.title-content-element div>p:first-child{
+		font-size: 15px;
+	 }
+	 .title-content-element div>p:last-child{
+		font-size: 11px;
+	 }
 	@keyframes bg-pos{
 		from{
 		  background-position: -5px;}

@@ -1,4 +1,7 @@
 @media (max-width: 554px) {
+	.long-text{
+		width: 250px;
+	}
 	.dgdeveloper{
 		font-size: 50px;
 	}
@@ -27,6 +30,9 @@
 	}
 }
 @media (max-width: 404px) {
+	.long-text{
+		width: 200px;
+	}
 	.dgdeveloper{
 		font-size: 40px;
 	}
@@ -93,6 +99,9 @@
 
 }
 @media (max-width: 332px) {
+	.long-text{
+		width: 150px;
+	}
 	.dgdeveloper{
 		font-size: 30px;
 	}
@@ -129,6 +138,9 @@
 	}
 }
 @media (max-width: 240px) {
+	.long-text{
+		width: 150px;
+	}
 	.dgdeveloper{
 		font-size: 20px;
 	}

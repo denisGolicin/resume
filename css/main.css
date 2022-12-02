@@ -151,7 +151,7 @@ nav{
 }
 nav .nav-element{
     flex: 0 1 50%;
-    
+    cursor: pointer;
     padding: 5px;
     color: var(--text-color);
 }
@@ -192,6 +192,71 @@ p b{
 p b span{
     color: yellow;
 }
+.long-text{
+    width: 300px; 
+    margin: 0 auto;  
+    margin-top: 20px;
+}
+
+.block-br{
+    height: 1px;
+    background-color: var(--main-color);
+    margin-top: 20px;
+}
+
+.project-element{
+    min-width: 150px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 10px;
+}
+.project-element:hover{
+    background-color: var(--active-color);
+}
+.project-element:active{
+    background-color: var(--main-color);
+}
+.project-element-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 1 25%;
+    border-right: 1px solid var(--main-color);
+
+}
+.project-element-icon svg{
+    width: 40px;
+    height: 40px;
+}
+.project-element-text{
+    flex: 0 1 75%;
+    display: flex;
+    align-items: center;
+}
+
+.project-element-text>span{
+    font-size: 20px;
+    padding-left: 10px;
+}
+.project-element-text>span>p{
+    margin: 0;
+    padding: 0;
+}
+.project-element-content{
+    overflow: hidden;
+    max-height: 0; 
+    transition: 0.3s; 
+}
+.project-accordion:first-child{
+    margin: 0;
+}
+.project-accordion{
+    margin-top: 20px;
+}
+
+
 .moment-skills{
     display: flex;
     flex-direction: row;

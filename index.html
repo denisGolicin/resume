@@ -196,8 +196,8 @@
 								<svg >
 									<use xlink:href="#avatar"></use>
 								</svg>
+							</div>
 						</div>
-					</div>
 						<div class="title-content-element">
 							<div>
 								<p><span style="color: yellow">D</span>enis <span style="color: yellow">G</span>olicin</p>
@@ -214,7 +214,9 @@
 					<p><b>&lt;<span> / </span>&gt;</b> Я Junior разработчик</p>
 					<p><b>&lt;<span> / </span>&gt;</b> На данный момент изучаю:</p> -->
 
-					<p>На данный момент изучаю</p>
+					<p class="long-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quasi.</p>
+					<div class="block-br"></div>
+					<p class="p-title">На данный момент изучаю</p>
 
 					<div class="moment-skills">
 						<div class="momemt-icon">
@@ -233,7 +235,9 @@
 							</svg>
 						</div>
 					</div>
-					<p>Дополнительные навыки</p>
+
+					<div class="block-br"></div>
+					<p class="p-title">Дополнительные навыки</p>
 					<div class="moment-skills">
 						<div class="momemt-icon">
 							<svg >
@@ -250,54 +254,61 @@
 								<use xlink:href="#python"></use>
 							</svg>
 						</div>
+					</div>
+					<div class="moment-skills">
 						<div class="momemt-icon">
 							<svg >
 								<use xlink:href="#sql"></use>
 							</svg>
 						</div>
 					</div>
+					<div class="block-br"></div>
+					<p class="long-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quasi.</p>
 				</div>
 				<div class="project-content" id="project-content">
-					<p>На данный момент изучаю</p>
-
-					<div class="moment-skills">
-						<div class="momemt-icon">
-							<svg >
-								<use xlink:href="#html"></use>
-							</svg>
+					<div class="project-accordion">
+						<div class="project-element">
+							<div class="project-element-icon">
+								<svg >
+									<use xlink:href="#sql"></use>
+								</svg>
+							</div>
+							<div class="project-element-text">
+								<span><p>Система умного дома</p></span>
+							</div>
 						</div>
-						<div class="momemt-icon">
-							<svg >
-								<use xlink:href="#css"></use>
-							</svg>
-						</div>
-						<div class="momemt-icon">
-							<svg >
-								<use xlink:href="#js"></use>
-							</svg>
+						<div class="project-element-content">
+							Lorem ipsum dolor sit amet consectetur
 						</div>
 					</div>
-					<p>Дополнительные навыки</p>
-					<div class="moment-skills">
-						<div class="momemt-icon">
-							<svg >
-								<use xlink:href="#microcontroller"></use>
-							</svg>
+					<div class="project-accordion">
+						<div class="project-element">
+							<div class="project-element-icon">
+								<svg >
+									<use xlink:href="#python"></use>
+								</svg>
+							</div>
+							<div class="project-element-text">
+								<span><p>Телеграм бот</p></span>
+							</div>
 						</div>
-						<div class="momemt-icon">
-							<svg >
-								<use xlink:href="#c++"></use>
-							</svg>
+						<div class="project-element-content">
+							Lorem ipsum dolor sit amet consectetur
 						</div>
-						<div class="momemt-icon">
-							<svg >
-								<use xlink:href="#python"></use>
-							</svg>
+					</div>
+					<div class="project-accordion">
+						<div class="project-element">
+							<div class="project-element-icon">
+								<svg >
+									<use xlink:href="#microcontroller"></use>
+								</svg>
+							</div>
+							<div class="project-element-text">
+								<span><p>Телеграфный ключ</p></span>
+							</div>
 						</div>
-						<div class="momemt-icon">
-							<svg >
-								<use xlink:href="#sql"></use>
-							</svg>
+						<div class="project-element-content">
+							Lorem ipsum dolor sit amet consectetur
 						</div>
 					</div>
 				</div>
@@ -357,18 +368,32 @@
 					
 
 				}
-			}); // при нажатии на бокс вызываем ф-ию boxHanlder
-			
+			}); 
+			const boxes = Array.from(document.querySelectorAll(".project-accordion")); // считываем все элементы аккордеона в массив
 
-			// function boxHandler(e) {
-			// 	console.log(e.target);
-				
-			// 	// let currentBox = e.target.parentNode;
-			// 	// let activeBox = querySelectorAll("active");
-			// 	// console.log(currentBox);
-				
-			// 	// currentBox.classList.add("active");
-			// }
+			boxes.forEach((box) => {
+				box.addEventListener("click", boxHandler); // при нажатии на бокс вызываем ф-ию boxHanlder
+				console.log(box);
+			});
+
+			function boxHandler(e) {
+				// e.preventDefault(); // сбрасываем стандартное поведение
+				let currentBox = e.target.closest(".project-accordion"); // определяем текущий бокс
+				let currentContent = currentBox.lastElementChild; // находим скрытый контент
+				if(e.target == e.target.closest(".tedt")){
+					console.log("No");
+					return;
+				}
+				console.log(e.target);
+				currentBox.classList.toggle("project-active"); // присваиваем ему активный класс
+				if (currentBox.classList.contains("project-active")) {
+					// если класс активный ..
+					currentContent.style.maxHeight = currentContent.scrollHeight + "px"; // открываем контент
+				} else {
+					// в противном случае
+					currentContent.style.maxHeight = 0; // скрываем контент
+				}
+			}
 		</script>
 	</body>
 </html>

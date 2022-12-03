@@ -137,24 +137,31 @@
 }
 @media (max-width: 240px) {
 	.long-text{
-		width: 150px;
+		width: 100px;
 	}
 	.dgdeveloper{
-		font-size: 20px;
+		font-size: 32px;
 	}
 	@keyframes bg-pos{
 		from{
-		  background-position: 25px;}
+		  background-position: -5px;}
 		/* 60%{
 		  background-position: 500px;} */
 		to{ 
-		  background-position: 150px;}
+		  background-position: 200px;}
+	  }
+	  .text-liner::after{
+		top: 50%;
+		left: -250%;
+		transform: translate(250%,-50%) translateY(-2px);
+		animation: animation-text-liner-after 1s forwards;
+		animation-delay: 8s;
 	  }
 	  @keyframes animation-text-liner-after {
 		to{
 			top: 50%;
-			left: -50%;
-			transform: translate(50%,-50%) translateY(-2px);
+			left: -150%;
+			transform: translate(150%,-50%) translateY(-2px);
 		}
 	}
 	  

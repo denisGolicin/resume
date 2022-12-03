@@ -209,10 +209,10 @@ p b span{
     color: yellow;
     margin-top: 0;
 }
-.project-half::after{
+.project-half::before{
     display: inline-block;
     content: url(../svg/unhappy_gqm5ncyhf600.svg);
-    margin-left: 5px;
+    /* margin-right: 5px; */
     width: 30px;
     height: 30px;
     transform: translateY(5px);

@@ -55,8 +55,6 @@
 		left: -127%;
 		transform: translate(127%,-50%) translateY(-2px);
 		font-size: 13px;
-		animation: animation-text-liner-after 1s forwards;
-		animation-delay: 8s;
 	}
 	@keyframes animation-text-liner-after {
 		to{

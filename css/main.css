@@ -44,7 +44,7 @@ main {
 @keyframes animation-text-liner{
 
     60%{ 
-        transform: translateX(0px)
+        transform: translateX(0px);
     }
     100%{
         transform: translateX(150px);
@@ -107,6 +107,7 @@ footer{
 .main-content{
     animation: animation-main-content 1s forwards;
     animation-delay: 8s;
+    
 }
 .project-content{
     display: none;
@@ -120,11 +121,12 @@ footer{
 @keyframes animation-main-content {
     
     to{
-        max-height: 1000px;
+        max-height: 2000px;
         margin-top: 20px;
         margin-bottom: 20px;
         padding: 20px;
     }
+
  }
  .title-content{
     display: flex;
@@ -165,7 +167,7 @@ nav .nav-element:last-child{
 }
 .active{
     background-color: var(--active-color);
-    transition: .5s;
+    transition: background-color .5s;
 }
 
 @keyframes animation-main-tab {
@@ -208,6 +210,7 @@ p b span{
 .project-half{
     color: yellow;
     margin-top: 0;
+
 }
 .project-half::before{
     display: inline-block;
@@ -218,12 +221,13 @@ p b span{
     transform: translateY(5px);
 }
 button{
+    margin-top: 20px;
     padding: 10px;
     background-color: var(--button-color);
     border-radius: 10px;
     color: var(--text-color);
     cursor: pointer;
-    transition: .5s;
+    transition: background-color .5s;
 }
 button:hover{
     background-color: var(--active-color);
@@ -240,7 +244,7 @@ button:hover{
     display: flex;
     flex-direction: row;
     cursor: pointer;
-    transition: .5s;
+    transition: background-color .5s;
     border-radius: 10px;
 }
 .project-element:hover{
@@ -278,7 +282,7 @@ button:hover{
 .project-element-content{
     overflow: hidden;
     max-height: 0; 
-    transition: 0.3s; 
+    transition: max-height .3s; 
 }
 .project-accordion:first-child{
     margin: 0;

@@ -100,31 +100,31 @@
 }
 @media (max-width: 332px) {
 	.long-text{
-		width: 150px;
+		width: 130px;
 	}
 	.dgdeveloper{
-		font-size: 30px;
+		font-size: 37px;
 	}
 	@keyframes bg-pos{
 		from{
-		  background-position: 10px;}
+		  background-position: -5px;}
 		/* 60%{
 		  background-position: 500px;} */
 		to{ 
-		  background-position: 200px;}
+		  background-position: 230px;}
 	  }
 	  .text-liner::after{
 		top: 50%;
-		left: -140%;
-		transform: translate(140%,-50%) translateY(-2px);
-		animation: animation-text-liner-after 1s forwards;
-		animation-delay: 8s;
+		left: -150%;
+		transform: translate(150%,-50%) translateY(-2px);
+		/* animation: animation-text-liner-after 1s forwards;
+		animation-delay: 8s; */
 	}
 	@keyframes animation-text-liner-after {
 		to{
 			top: 50%;
-			left: -100%;
-			transform: translate(100%,-50%) translateY(-2px);
+			left: -150%;
+			transform: translate(150%,-50%) translateY(-2px);
 		}
 	}
 	@keyframes animation-text-liner{
@@ -152,5 +152,12 @@
 		to{ 
 		  background-position: 150px;}
 	  }
+	  @keyframes animation-text-liner-after {
+		to{
+			top: 50%;
+			left: -50%;
+			transform: translate(50%,-50%) translateY(-2px);
+		}
+	}
 	  
 }

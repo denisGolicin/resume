@@ -2,6 +2,7 @@
     --main-color: #ffffff25;
     --text-color: rgba(255, 255, 255, 0.616);
     --active-color: #0c092a;
+    --button-color: #423299;
 }
 body{
     
@@ -74,10 +75,10 @@ footer{
     transform: translateY(300px);
     
 }
-.icon>svg:hover{
+.icon>a>svg:hover{
     fill:rgba(255, 255, 255, 0.616);
 }
-.icon>svg{
+.icon>a>svg{
     width: 35px;
     height: 35px;
     transition: .3s;
@@ -196,6 +197,36 @@ p b span{
     width: 300px; 
     margin: 0 auto;  
     margin-top: 20px;
+}
+.github-text::after{
+    display: inline-block;
+    content: url(../svg/github_g2nkr1q2vldi.svg);
+    margin-left: 5px;
+    width: 15px;
+    height: 15px;
+}
+.project-half{
+    color: yellow;
+    margin-top: 0;
+}
+.project-half::after{
+    display: inline-block;
+    content: url(../svg/unhappy_gqm5ncyhf600.svg);
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    transform: translateY(5px);
+}
+button{
+    padding: 10px;
+    background-color: var(--button-color);
+    border-radius: 10px;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: .5s;
+}
+button:hover{
+    background-color: var(--active-color);
 }
 
 .block-br{
@@ -317,4 +348,5 @@ p b span{
     background-color: rgba(255, 255, 255, 0);
     width: 90%;
     height: 90%;
+    border-radius: 0%;
  }

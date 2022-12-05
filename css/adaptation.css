@@ -1,40 +1,20 @@
 @media (max-width: 554px) {
 	.long-text{
-		width: 250px;
+		
+	}
+	.text-liner{
+		font-size: 13px;
 	}
 	.dgdeveloper{
 		font-size: 50px;
 	}
-	@keyframes bg-pos{
-		from{
-		  background-position: -20px;}
-		/* 60%{
-		  background-position: 500px;} */
-		to{ 
-		  background-position: 300px;}
-	  }
-	  /*============*/
-	  .text-liner::after{
-		top: 50%;
-		left: -82%;
-		transform: translate(82%,-50%) translateY(-2px);
-	}
-	@keyframes animation-text-liner{
-
-		60%{ 
-			transform: translateX(0px)
-		}
-		100%{
-			transform: translateX(130px);
-		}
-	}
 }
 @media (max-width: 404px) {
 	.long-text{
-		width: 200px;
+		
 	}
 	.dgdeveloper{
-		font-size: 40px;
+		font-size: 45px;
 	}
 	.title-content-element div>p:first-child{
 		font-size: 15px;
@@ -42,34 +22,23 @@
 	 .title-content-element div>p:last-child{
 		font-size: 11px;
 	 }
-	@keyframes bg-pos{
-		from{
-		  background-position: -5px;}
-		/* 60%{
-		  background-position: 500px;} */
-		to{ 
-		  background-position: 250px;}
-	  }
-	  .text-liner::after{
-		top: 50%;
-		left: -127%;
-		transform: translate(127%,-50%) translateY(-2px);
-		font-size: 13px;
+	 .text-liner{
+		font-size: 12px;
 	}
-	@keyframes animation-text-liner-after {
-		to{
-			top: 50%;
-			left: -100%;
-			transform: translate(100%,-50%) translateY(-2px);
+	@keyframes animation-text-liner {
+		100%{
+			transform: translateX(15px);
 		}
 	}
-	@keyframes animation-text-liner{
-
-		60%{ 
-			transform: translateX(0px)
+	@keyframes animation-liner {
+		50%{
+			transform: translateX(0px);
+		}
+		80%{
+			transform: translateX(0px);
 		}
 		100%{
-			transform: translateX(120px);
+			transform: translateX(125px);
 		}
 	}
 	@keyframes animation-cursor {
@@ -97,72 +66,39 @@
 
 }
 @media (max-width: 332px) {
-	.long-text{
-		width: 130px;
-	}
+	.photo, .photo>svg{
+		width: 80px;
+		height: 80px;
+	 }  
+	 .moment-skills div, svg{
+    
+		width: 40px;
+		height: 40px;
+	}	
 	.dgdeveloper{
 		font-size: 37px;
 	}
-	@keyframes bg-pos{
-		from{
-		  background-position: -5px;}
-		/* 60%{
-		  background-position: 500px;} */
-		to{ 
-		  background-position: 230px;}
-	  }
-	  .text-liner::after{
-		top: 50%;
-		left: -150%;
-		transform: translate(150%,-50%) translateY(-2px);
-		/* animation: animation-text-liner-after 1s forwards;
-		animation-delay: 8s; */
+	.project-element-text>span>p{
+		font-size: 11px;
 	}
-	@keyframes animation-text-liner-after {
-		to{
-			top: 50%;
-			left: -150%;
-			transform: translate(150%,-50%) translateY(-2px);
-		}
-	}
-	@keyframes animation-text-liner{
-
-		60%{ 
-			transform: translateX(0px)
-		}
-		100%{
-			transform: translateX(120px);
-		}
+	.title-content-element{
+		padding: 15px;
 	}
 }
 @media (max-width: 240px) {
-	.long-text{
-		width: 100px;
+	p{
+		font-size: 12px;
 	}
 	.dgdeveloper{
 		font-size: 32px;
 	}
-	@keyframes bg-pos{
-		from{
-		  background-position: -5px;}
-		/* 60%{
-		  background-position: 500px;} */
-		to{ 
-		  background-position: 200px;}
-	  }
-	  .text-liner::after{
-		top: 50%;
-		left: -250%;
-		transform: translate(250%,-50%) translateY(-2px);
-		animation: animation-text-liner-after 1s forwards;
-		animation-delay: 8s;
-	  }
-	  @keyframes animation-text-liner-after {
-		to{
-			top: 50%;
-			left: -150%;
-			transform: translate(150%,-50%) translateY(-2px);
-		}
-	}
-	  
+	.moment-skills div, svg{
+    
+		width: 35px;
+		height: 35px;
+	}	
+	.photo, .photo>svg{
+		width: 75px;
+		height: 75px;
+	 }  
 }

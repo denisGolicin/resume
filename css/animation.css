@@ -229,11 +229,8 @@
       }
   }
 
-  .dgdeveloper{
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%); */
+  /* .dgdeveloper{
+  
   color: #bd4be5;
   background: linear-gradient(to right, var(--main-color) 0, white 10%, var(--main-color) 20%);
   background-position: 0;
@@ -246,13 +243,12 @@
   font-size: 70px;
   text-decoration: none;
   white-space: nowrap;
-  }
+  } */
     
-@keyframes bg-pos{
+/* @keyframes bg-pos{
   from{
     background-position: -30px;}
-  /* 60%{
-    background-position: 500px;} */
+
   to{ 
     background-position: 400px;}
-}
+} */

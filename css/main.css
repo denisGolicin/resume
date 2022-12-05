@@ -438,14 +438,14 @@ button:hover{
 
  @keyframes animation-dgdeveloper {
     0%{
-        filter: blur(10px);
-        opacity: .3;
+        /* filter: blur(10px); */
+        opacity: 0;
     }
     
     70%{
         text-shadow: 0 0 5px #ffffff00;
         color: var(--text-color);
-        filter: blur(0px);
+        /* filter: blur(0px); */
         opacity: 1;
     }
     100%{

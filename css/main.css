@@ -24,7 +24,7 @@ main {
     text-align: center;
     max-height: 80%;
     position: absolute;
-    overflow-y: auto;
+    overflow-y: hidden;
     overflow-x: hidden;
     top: 50%;
     left: 50%;

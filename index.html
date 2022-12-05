@@ -185,7 +185,7 @@
 			</div>
 
 
-			<div class="main-wrapper">
+			<div class="main-wrapper" id="main-wrapper">
 				<div class="dgdeveloper">DGDeveloper</div>
 				<nav>
 					<div class="nav-element active" id="about">
@@ -380,6 +380,12 @@
 			const project = document.getElementById("project");
 			const mainContent = document.getElementById("main-content");
 			const projectContent = document.getElementById("project-content");
+
+			setTimeout(scrollEnable, 8000);
+
+			function scrollEnable() {
+				document.getElementById("main-wrapper").style.overflowY = "scroll";
+			}
 
 			project.addEventListener("click", () => {
 				console.log("project");

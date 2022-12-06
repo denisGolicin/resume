@@ -265,6 +265,8 @@ button:hover{
     cursor: pointer;
     transition: background-color .5s;
     border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .project-element:hover{
     background-color: var(--active-color);

@@ -3,14 +3,6 @@ const project = document.getElementById("project");
 const mainContent = document.getElementById("main-content");
 const projectContent = document.getElementById("project-content");
 
-setTimeout(scrollEnable, 9000);
-
-function scrollEnable() {
-    // document.getElementById("main-wrapper").style.overflowY = "scroll";  
-    
-    // mainContent.style.animation = "animation-main-content 1s forwards";
-}
-
 project.addEventListener("click", () => {
     console.log("project");
     if(project.classList.contains("active")){

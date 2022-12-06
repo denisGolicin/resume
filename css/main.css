@@ -24,7 +24,7 @@ main {
     text-align: center;
     max-height: 80%;
     position: absolute;
-    overflow: hidden;
+    overflow: scroll;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -87,7 +87,7 @@ footer{
     height: 35px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0);
-    transform: translateY(300px);
+    transform: scale(0);
     
 }
 .icon>a>svg:hover{
@@ -116,7 +116,7 @@ footer{
 
 @keyframes animation-icon {
     to{
-        transform: translateY(0px);
+        transform: scale(1);
     }    
 }
 .main-content{
@@ -128,7 +128,6 @@ footer{
 }
 .main-content, .project-content{
     max-height: 0;
-    -webkit-overflow-scrolling: touch;
     overflow: hidden;
     background-color: var(--main-color);
     border-radius: 10px;

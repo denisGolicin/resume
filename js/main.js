@@ -6,9 +6,10 @@ const projectContent = document.getElementById("project-content");
 setTimeout(scrollEnable, 9000);
 
 function scrollEnable() {
-    document.getElementById("main-wrapper").style.overflowY = "scroll";
-    mainContent.style.maxHeight = "initial"; 
-
+    document.getElementById("main-wrapper").style.overflowY = "scroll";  
+    window.addEventListener('touchend', _ => {
+        window.scrollTo(0,0)
+    });
     // mainContent.style.animation = "animation-main-content 1s forwards";
 }
 

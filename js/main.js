@@ -3,11 +3,12 @@ const project = document.getElementById("project");
 const mainContent = document.getElementById("main-content");
 const projectContent = document.getElementById("project-content");
 
-setTimeout(scrollEnable, 8000);
+setTimeout(scrollEnable, 9000);
 
 function scrollEnable() {
     document.getElementById("main-wrapper").style.overflowY = "scroll";
-    document.getElementById("main-wrapper").style.maxHeight = "2000px";
+    // mainContent.style.maxHeight = "2000px"; 
+    // mainContent.style.animation = "animation-main-content 1s forwards";
 }
 
 project.addEventListener("click", () => {
@@ -34,8 +35,6 @@ about.addEventListener("click", () => {
         mainContent.style.display = "block";
         projectContent.style.display = "none";
         mainContent.style.animationDelay = "0s";
-        
-
     }
 }); 
 const boxes = Array.from(document.querySelectorAll(".project-accordion")); 
@@ -56,10 +55,8 @@ function boxHandler(e) {
     console.log(e.target);
     currentBox.classList.toggle("project-active"); 
     if (currentBox.classList.contains("project-active")) {
-        // если класс активный ..
         currentContent.style.maxHeight = currentContent.scrollHeight + "px"; 
     } else {
-        // в противном случае
         currentContent.style.maxHeight = 0; 
     }
 }

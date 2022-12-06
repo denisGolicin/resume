@@ -123,24 +123,25 @@ footer{
 .main-content{
     animation: animation-main-content 1s forwards;
     animation-delay: 8s;
-    
+    display: block;
 }
 .project-content{
     display: none;
 }
 .main-content, .project-content{
-    height: initial;
-    clear: both;
     max-height: 0;
     overflow: hidden;
     background-color: var(--main-color);
     border-radius: 10px;
+    height: initial;
+    clear: both;
 }
 @keyframes animation-main-content {
     
     to{
-        max-height: 2000px;
+        max-height: 2000px; 
         height: initial;
+        clear: both;
     }
 
  }
@@ -461,6 +462,7 @@ button:hover{
     padding: 0;
     margin: 0;
     margin-left: 5px;
+    color: var(--main-color);
     
  }
  .marker-svg{

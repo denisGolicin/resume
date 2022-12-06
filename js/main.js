@@ -7,8 +7,7 @@ setTimeout(scrollEnable, 9000);
 
 function scrollEnable() {
     document.getElementById("main-wrapper").style.overflowY = "scroll";
-    mainContent.style.height = "initial"; 
-    mainContent.style.clear = "both"; 
+    mainContent.style.maxHeight = "initial"; 
 
     // mainContent.style.animation = "animation-main-content 1s forwards";
 }

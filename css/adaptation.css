@@ -8,11 +8,24 @@
 	.dgdeveloper{
 		font-size: 50px;
 	}
+	.position>p{
+		font-size: 11px;
+		
+	 }
+	 .marker-svg{
+		width: 11px;
+		height: 11px;
+	 }
 }
 @media (max-width: 404px) {
-	.long-text{
+	.position>p{
+		font-size: 10px;
 		
-	}
+	 }
+	 .marker-svg{
+		width: 10px;
+		height: 10px;
+	 }
 	.dgdeveloper{
 		font-size: 45px;
 	}
@@ -70,6 +83,14 @@
 		width: 80px;
 		height: 80px;
 	 }  
+	 .position>p{
+		font-size: 9px;
+		
+	 }
+	 .marker-svg{
+		width: 9px;
+		height: 9px;
+	 }
 	 .moment-skills div, svg{
     
 		width: 40px;

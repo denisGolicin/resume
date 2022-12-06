@@ -129,6 +129,8 @@ footer{
     display: none;
 }
 .main-content, .project-content{
+    height: initial;
+    clear: both;
     max-height: 0;
     overflow: hidden;
     background-color: var(--main-color);
@@ -137,8 +139,8 @@ footer{
 @keyframes animation-main-content {
     
     to{
-        height: initial;
         max-height: 2000px;
+        height: initial;
     }
 
  }

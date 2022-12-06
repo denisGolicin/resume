@@ -236,6 +236,9 @@ p b span{
     width: 15px;
     height: 15px;
 }
+.github-text{
+    color: var(--text-color);
+}
 
 button{
     margin-top: 20px;

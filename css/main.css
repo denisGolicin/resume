@@ -123,7 +123,6 @@ footer{
 .main-content{
     animation: animation-main-content 1s forwards;
     animation-delay: 8s;
-    display: block;
 }
 .project-content{
     display: none;
@@ -133,15 +132,11 @@ footer{
     overflow: hidden;
     background-color: var(--main-color);
     border-radius: 10px;
-    height: initial;
-    clear: both;
 }
 @keyframes animation-main-content {
     
     to{
         max-height: 2000px; 
-        height: initial;
-        clear: both;
     }
 
  }

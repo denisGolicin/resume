@@ -137,7 +137,8 @@ footer{
 @keyframes animation-main-content {
     
     to{
-        max-height: 1300px;
+        height: initial;
+        max-height: 2000px;
     }
 
  }

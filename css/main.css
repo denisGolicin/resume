@@ -83,8 +83,6 @@ footer{
     margin-top: 20px;
 }
 .icon{
-    width: 35px;
-    height: 35px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0);
     transform: scale(0);
@@ -471,7 +469,7 @@ button:hover{
     font-size: 70px;
     text-align: center;
     /* transform: translateX(600px); */
-    text-shadow: 0 0 5px #ffffff00;
+    text-shadow: 0 0 5px var(--text-color);
     animation: animation-dgdeveloper 4s forwards ease-out;
  }
 
@@ -479,17 +477,20 @@ button:hover{
     0%{
         /* filter: blur(10px); */
         opacity: 0;
+        transform: scale(1);
     }
-    
     70%{
-        text-shadow: 0 0 5px #ffffff00;
-        color: var(--text-color);
-        /* filter: blur(0px); */
+        transform: scale(1);
+    }
+    87%{
+        transform: scale(0.95);
+    }
+    93%{
+        transform: scale(1);
         opacity: 1;
     }
     100%{
-        text-shadow: 0 0 5px var(--text-color);
-        transform: translateX(0px) scale(1);
+        transform: scale(1);
     }
     
  }

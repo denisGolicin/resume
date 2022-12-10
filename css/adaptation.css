@@ -123,3 +123,98 @@
 		height: 75px;
 	 }  
 }
+
+@media (min-width: 1399px){
+	.long-text {
+		max-width: 580px;
+	}
+	.dgdeveloper{
+		font-size: 100px;
+	}
+	p{
+		font-size: 30px;
+	}
+	button{
+		font-size: 30px;
+		padding: 15px;
+	}
+	.text-liner{
+		font-size: 25px;
+		transform: translateX(-200px);
+	}
+	@keyframes animation-liner {
+		50%{
+			transform: translateX(0px);
+		}
+		80%{
+			transform: translateX(0px);
+		}
+		94%{
+			transform: translateX(230px);
+		}
+		100%{
+			transform: translateX(230px);
+		}
+	}
+
+	.moment-skills div, svg{
+    
+		width: 75px;
+		height: 75px;
+	}
+	.photo, .photo>svg{
+		width: 200px;
+		height: 200px;
+	}
+	nav .nav-element{
+		padding: 10px;
+	}
+	.title-content-element div>p:first-child {
+		font-size: 30px;
+	}
+	.position>p {
+		font-size: 25px;
+	}
+	.marker-svg{
+		width: 25px;
+		height: 25px;
+	 }
+	.project-element-icon svg{
+		width: 75px;
+		height: 75px;
+	}
+	.icon>a>svg{
+		width: 50px;
+		height: 50px;
+	}
+	.icon:nth-child(2){
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+	.cursor{
+		width: 45px;
+		height: 45px;
+	}
+	@keyframes animation-cursor {
+		60%{
+			top:45%;
+			left: 55%;
+			width: 45px;
+			height: 45px;
+		}
+		80%{
+			width: 40px;
+			height: 40px;
+		}
+		90%{
+			width: 45px;
+			height: 45px;
+			opacity: 1;
+		}
+		100%{
+			top:45%;
+			left: 55%;
+			opacity: 0;
+		}
+	 }
+}

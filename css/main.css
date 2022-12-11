@@ -225,17 +225,6 @@ p b span{
     
 }
 
-.github-text::after{
-    display: inline-block;
-    content: url(../svg/github_g2nkr1q2vldi.svg);
-    margin-left: 5px;
-    width: 15px;
-    height: 15px;
-}
-.github-text{
-    color: var(--text-color);
-}
-
 button{
     margin-top: 20px;
     padding: 10px;
